@@ -4,9 +4,10 @@ javascript parser for TKL format. Sport watch models: GPSmaster, navrun-500, ult
 
 Read [here](https://www.reddit.com/r/ukbike/comments/29i7nt/did_anyone_else_get_the_gps_watch_from_the_aldi/)
 
+Adapted to use with the [fiplotter](https://github.com/karaul/fitplotter/) and [fitalyser](https://github.com/karaul/fitalyser/)
+
 ## License
 
 MIT license
-
 
 (c) Evgeny Votyakov aka karaul ([about me](http://www.irc-club.ru/karaul.html) in Russian), Nicosia, Cyprus, 2021
