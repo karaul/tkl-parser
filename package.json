@@ -1,0 +1,10 @@
+{
+  "author": {
+    "name": "Evgeny Votyaκοv"
+  },
+  "description": "TKL format parser",
+  "main": "test.js",
+  "name": "tkl-parser",
+  "dependencies": {
+  }
+}
