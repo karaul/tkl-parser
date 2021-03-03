@@ -50,7 +50,7 @@ Speed is measured in Metres per hour
 Distance is measured in cm and is distance from previous point
 */
 
-//use strict
+'use strict'
 
 function parseBytes(arr, base, delim) { 
   // [a1, a2, ... an].map(b=>{return b.toString(16).padStart(2,0)}).reduce((s,b)=>{return s+b}); 
@@ -67,7 +67,6 @@ function parseBytesToInt(arr) {
 }
 
 // class definiton
-
 class TklParser {
   constructor(options = {}) {
     this.options = {
@@ -133,7 +132,17 @@ class TklParser {
     session.total_timer_time = (new Date(records[records.length - 1].timestamp) - new Date(records[0].timestamp)) / 60000;
     session.total_distance = records[records.length - 1].distance / 1000;
 
+    // fill laps
+    // το do: split track in 1km intervals
+    let lap = [  {start_time: records[0].timestamp, avg_speed: records[0].speed }, 
+      {start_time: records.slice(-1).timestamp, avg_speed: records.slice(-1).speed}  ];
     const laps = [];
+    laps.push(lap);
+
+    // fill sessions
+    session.start_time = records[0].timestamp;
+    session.total_timer_time = (new Date(records[records.length - 1].timestamp) - new Date(records[0].timestamp)) / 60000;
+    session.total_distance = records[records.length - 1].distance / 1000;
     const sessions = [];
     sessions.push(session);
 

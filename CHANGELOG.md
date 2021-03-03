@@ -1,9 +1,21 @@
 # Changelog
-Changes to this project are documented in this file
 
-#### 2020-03-01
+`tkl-parser` changes are documented in this file
+
+## To do
+
+- split tracks into 1kn laps
+- smooth spike on GPS ? or better to in the [fitplotter](https://github.com/karaul/fitplotter/) ?
+
+### 2021-03-03
+
+- added laps;
+
+### 2021-03-02
+
 - README.md
-- CHANGELOG.md 
+- CHANGELOG.md
 
-### 2020-03-01
+### 2021-03-01
+
 Works as expected
